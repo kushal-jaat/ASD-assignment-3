@@ -66,7 +66,7 @@ for i, country in enumerate(countries):
 
 # plot the centers
 plt.scatter(cen_2014[:, 0], cen_2014[:, 1], c="k", marker="d", s=80)
-plt.title(f"{nc} Clusters in 2014")
+plt.title('Power uses ')
 plt.xlabel("Normalized Power Loss")
 plt.ylabel("Normalized Power Consumption")
 plt.show()
