@@ -19,14 +19,14 @@ def read_worldbank_data(file_path):
     dfyears.index = pd.to_datetime(dfyears.index, format='%Y').year
     return dfyears
 
-# Reading agriculture land data
+# Reading population land data
 file_path = "population.csv"
 dfyears = read_worldbank_data(file_path)
 
 # Select data from 1990 to 2022
 dfyears = dfyears.loc[(dfyears.index >= 1970) & (dfyears.index <= 2022)]
 
-# Select United Kingdom
+# Select italy
 country_data = dfyears['Italy'].dropna()
 x_data = country_data.index.values
 y_data = country_data.values
